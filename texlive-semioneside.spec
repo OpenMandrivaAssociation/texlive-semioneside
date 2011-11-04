@@ -54,6 +54,7 @@ request, e.g., floating objects.
 #- source
 %doc %{_texmfdistdir}/source/latex/semioneside/semioneside.dtx
 %doc %{_texmfdistdir}/source/latex/semioneside/semioneside.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -64,3 +65,5 @@ request, e.g., floating objects.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
