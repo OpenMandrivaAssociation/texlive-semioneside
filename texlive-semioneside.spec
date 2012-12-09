@@ -54,3 +54,17 @@ request, e.g., floating objects.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> v0.41-2
++ Revision: 755907
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> v0.41-1
++ Revision: 719505
+- texlive-semioneside
+- texlive-semioneside
+- texlive-semioneside
+- texlive-semioneside
+
