@@ -6,7 +6,7 @@
 # catalog-version v0.41
 Name:		texlive-semioneside
 Version:	v0.41
-Release:	3
+Release:	4
 Summary:	Put only special contents on left-hand pages in two sided layout
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/semioneside
