@@ -1,12 +1,6 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/semioneside
-# catalog-date 2007-02-26 21:24:31 +0100
-# catalog-license lppl
-# catalog-version v0.41
 Name:		texlive-semioneside
-Version:	v0.41
-Release:	10
+Version:	0.41
+Release:	1
 Summary:	Put only special contents on left-hand pages in two sided layout
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/semioneside
@@ -54,17 +48,3 @@ request, e.g., floating objects.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> v0.41-2
-+ Revision: 755907
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> v0.41-1
-+ Revision: 719505
-- texlive-semioneside
-- texlive-semioneside
-- texlive-semioneside
-- texlive-semioneside
-
