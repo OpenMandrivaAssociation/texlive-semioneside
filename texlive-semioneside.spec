@@ -1,13 +1,13 @@
 Name:		texlive-semioneside
-Version:	0.41
-Release:	2
+Version:	15878
+Release:	1
 Summary:	Put only special contents on left-hand pages in two sided layout
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/semioneside
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/semioneside.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/semioneside.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/semioneside.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/semioneside.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/semioneside.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/semioneside.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -21,12 +21,12 @@ only special contents are output on left-hand pages on user
 request, e.g., floating objects.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -41,7 +41,8 @@ request, e.g., floating objects.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
