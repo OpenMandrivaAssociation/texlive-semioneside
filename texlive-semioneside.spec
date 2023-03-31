@@ -1,6 +1,6 @@
 Name:		texlive-semioneside
 Version:	15878
-Release:	1
+Release:	2
 Summary:	Put only special contents on left-hand pages in two sided layout
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/semioneside
