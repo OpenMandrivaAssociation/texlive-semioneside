@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Put only special contents on left-hand pages in two sided layout
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/semioneside
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/semioneside
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/semioneside.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/semioneside.doc.r%{version}.tar.xz
